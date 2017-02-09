@@ -1,0 +1,6 @@
+version: "2"
+services:
+    tf-batch:
+        build: .
+        volumes:
+            - ~/projects/bj/nb/data:/data
