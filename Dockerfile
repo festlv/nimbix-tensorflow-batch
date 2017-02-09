@@ -5,7 +5,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN sudo pip install https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.11.0rc2-cp27-none-linux_x86_64.whl
-RUN sudo pip install h5py hyperopt git+https://github.com/tflearn/tflearn.git@f13ee5f3ab79c33c8531db441245ea4c0a3abb3e
+RUN sudo pip install https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp27-none-linux_x86_64.whl
+RUN sudo pip install h5py hyperopt tflearn
 
 COPY test-libs.py /test-libs.py
